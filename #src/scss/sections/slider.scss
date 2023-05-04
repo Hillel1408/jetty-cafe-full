@@ -1,0 +1,120 @@
+.logo {
+    position: absolute;
+    z-index: 3;
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        gap: 16px;
+        span {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        &:last-child {
+            text-align: right;
+        }
+    }
+    @media (max-width: 430px) {
+        top: 52px;
+        img {
+            width: 130px;
+        }
+    }
+}
+.swiper {
+    position: relative;
+    height: calc(var(--vh, 1vh) * 100);
+    &-container {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        & .swiper-button-prev {
+            left: 114px;
+            transform: rotate(180deg);
+            &:after {
+                display: none;
+            }
+        }
+        & .swiper-button-next {
+            right: 114px;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &-slide {
+        position: relative;
+        &__text {
+            position: absolute;
+            z-index: 2;
+            bottom: 50%;
+            transform: translateY(50%);
+            text-align: center;
+            left: 0;
+            right: 0;
+            p {
+                font-size: 30px;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+                max-width: 730px;
+                margin: 0 auto;
+            }
+        }
+        &:before {
+            content: '';
+            display: block;
+            background-image: url('../img/shadow.png');
+            width: 100%;
+            height: 524px;
+            position: absolute;
+            z-index: 2;
+            @media (max-width: 430px) {
+                background-image: url('../img/shadow2.png');
+                height: 234px;
+            }
+        }
+    }
+}
+.desktop-img,
+.mobile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.desktop-img {
+    @media (max-width: 430px) {
+        display: none;
+    }
+}
+.mobile-img {
+    display: none;
+    @media (max-width: 430px) {
+        display: block;
+    }
+}
+.swiper-pagination {
+    bottom: 53px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    &-bullet {
+        background: white !important;
+        opacity: 1 !important;
+        &-active {
+            width: 12px !important;
+            height: 12px !important;
+        }
+    }
+}
