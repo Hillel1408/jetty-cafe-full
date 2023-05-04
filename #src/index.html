@@ -12,11 +12,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
     </head>
     <body class="body">
-        <div id="fullpage">@@include('./html/slider.html')</div>
+        <div id="fullpage">
+            @@include('./html/slider.html')
+            <div class="section section__two">
+                @@include('./html/services.html') @@include('./html/menu.html')
+                @@include('./html/poster.html')
+            </div>
+        </div>
         <script src="js/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="js/fullpage.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

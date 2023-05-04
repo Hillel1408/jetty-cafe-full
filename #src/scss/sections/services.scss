@@ -1,0 +1,28 @@
+.services {
+    padding-top: 85px;
+    margin-bottom: 97px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        &-item {
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            grid-area: 26px;
+            gap: 26px;
+            max-width: 177px;
+            span {
+                margin-top: auto;
+            }
+            &:nth-child(4) {
+                max-width: 210px;
+            }
+        }
+    }
+}

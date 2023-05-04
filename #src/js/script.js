@@ -22,3 +22,7 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options
+});

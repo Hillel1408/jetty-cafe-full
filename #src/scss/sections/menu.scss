@@ -1,0 +1,43 @@
+.menu {
+    margin-bottom: 100px;
+    &__title {
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 51px;
+        color: black;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 184px;
+        &-item {
+            display: flex;
+            gap: 50px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            span {
+                flex: 0 0 auto;
+            }
+            p {
+                flex: 1 1 auto;
+            }
+        }
+    }
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &:not(:last-child) {
+            margin-bottom: 34px;
+        }
+    }
+}

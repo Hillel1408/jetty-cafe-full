@@ -12,5 +12,12 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+.section__two {
+    background-color: white;
+    display: block !important;
+}
 
 @import './sections/slider';
+@import './sections/services';
+@import './sections/menu';
+@import './sections/poster';
