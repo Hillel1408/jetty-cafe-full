@@ -1,5 +1,5 @@
 .menu {
-    margin-bottom: 100px;
+    margin-bottom: 51px;
     &__title {
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
@@ -41,6 +41,7 @@
         transition: 0.9s;
         & > div {
             margin-top: 51px;
+            margin-bottom: 49px;
         }
         &-item {
             display: flex;

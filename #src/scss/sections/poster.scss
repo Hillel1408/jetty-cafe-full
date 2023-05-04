@@ -3,6 +3,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 51px;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.9s;
         img {
             width: 100%;
         }

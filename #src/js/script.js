@@ -25,11 +25,20 @@ window.addEventListener('resize', () => {
 
 Fancybox.bind('[data-fancybox="gallery"]', {});
 
+const func = (btn, block) => {
+    btn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        if (block.style.maxHeight) block.style.maxHeight = null;
+        else block.style.maxHeight = block.scrollHeight + 'px';
+    });
+};
+
 const menu = document.querySelector('.menu__grid');
 const menuBtn = document.querySelector('.menu-btn');
 
-menuBtn.addEventListener('click', function () {
-    this.classList.toggle('active');
-    if (menu.style.maxHeight) menu.style.maxHeight = null;
-    else menu.style.maxHeight = menu.scrollHeight + 'px';
-});
+func(menuBtn, menu);
+
+const poster = document.querySelector('.poster__grid');
+const posterBtn = document.querySelector('.poster-btn');
+
+func(posterBtn, poster);
