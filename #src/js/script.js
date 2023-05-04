@@ -23,6 +23,13 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-Fancybox.bind('[data-fancybox="gallery"]', {
-    // Your custom options
+Fancybox.bind('[data-fancybox="gallery"]', {});
+
+const menu = document.querySelector('.menu__grid');
+const menuBtn = document.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', function () {
+    this.classList.toggle('active');
+    if (menu.style.maxHeight) menu.style.maxHeight = null;
+    else menu.style.maxHeight = menu.scrollHeight + 'px';
 });
