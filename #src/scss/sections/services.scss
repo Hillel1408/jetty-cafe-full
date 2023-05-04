@@ -18,6 +18,7 @@
             gap: 26px;
             max-width: 177px;
             cursor: pointer;
+            position: relative;
             span {
                 margin-top: auto;
             }
@@ -28,6 +29,7 @@
                 transition: 0.5s;
                 &.img-hover {
                     position: absolute;
+                    top: 0;
                     opacity: 0;
                     visibility: hidden;
                 }
