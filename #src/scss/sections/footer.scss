@@ -1,0 +1,28 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        &-item,
+        &-item a {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            color: black;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+    }
+    &__logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
