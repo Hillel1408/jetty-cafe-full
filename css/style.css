@@ -631,6 +631,11 @@ h6 {
 .footer__list-item:hover, .footer__list-item a:hover {
   color: #7841c0;
 }
+@media (max-width: 768px) {
+  .footer__list {
+    gap: 25px;
+  }
+}
 .footer__logo {
   display: block;
   margin: 0 auto;
