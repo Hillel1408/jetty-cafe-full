@@ -169,6 +169,11 @@ h6 {
     font-size: 16px;
   }
 }
+@media (max-width: 700px) {
+  .logo {
+    top: 42px;
+  }
+}
 @media (max-width: 900px) {
   .logo-img {
     width: 160px;
@@ -181,7 +186,6 @@ h6 {
 }
 @media (max-width: 430px) {
   .logo-img {
-    top: 52px;
     width: 130px;
   }
 }
@@ -327,6 +331,11 @@ h6 {
 .swiper-pagination-bullet-active {
   width: 12px !important;
   height: 12px !important;
+}
+@media (max-width: 700px) {
+  .swiper-pagination {
+    bottom: 43px !important;
+  }
 }
 
 .services {
