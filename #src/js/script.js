@@ -12,6 +12,7 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
         delay: 3000,
     },
+    speed: 900,
 });
 
 new fullpage('#fullpage', {
