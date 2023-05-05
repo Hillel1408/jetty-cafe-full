@@ -171,7 +171,7 @@ h6 {
 }
 @media (max-width: 700px) {
   .logo {
-    top: 42px;
+    top: 22px;
   }
 }
 @media (max-width: 900px) {
@@ -334,7 +334,7 @@ h6 {
 }
 @media (max-width: 700px) {
   .swiper-pagination {
-    bottom: 43px !important;
+    bottom: 22px !important;
   }
 }
 
@@ -452,18 +452,15 @@ h6 {
 }
 .menu__title.active:hover:before, .menu__title.active:hover:after {
   content: url("../img/icon-20.png");
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(4px) rotate(180deg);
+      -ms-transform: translateY(4px) rotate(180deg);
+          transform: translateY(4px) rotate(180deg);
 }
 .menu__title:hover {
   color: #7841c0;
 }
 .menu__title:hover:before, .menu__title:hover:after {
   content: url("../img/icon-20.png");
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
 }
 .menu__subtitle {
   text-transform: uppercase;
@@ -498,6 +495,11 @@ h6 {
 .menu__grid > div {
   margin-top: 51px;
   margin-bottom: 49px;
+}
+@media (max-width: 768px) {
+  .menu__grid > div {
+    margin-bottom: 0;
+  }
 }
 .menu__grid-item {
   display: -webkit-box;
