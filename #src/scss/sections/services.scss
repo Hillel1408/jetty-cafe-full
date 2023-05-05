@@ -1,7 +1,6 @@
 .services {
     padding-top: 85px;
     margin-bottom: 97px;
-
     &__list {
         @media (max-width: 520px) {
             margin-left: -15px;
@@ -33,15 +32,23 @@
             @media (max-width: 520px) {
                 font-size: 14px;
             }
-
             span {
                 margin-top: auto;
             }
             &:nth-child(4) {
                 max-width: 210px;
-                @media (max-width: 520px) {
-                    max-width: 177px;
+                @media (max-width: 1224px) {
+                    max-width: 187px;
                 }
+                @media (max-width: 500px) {
+                    max-width: 127px;
+                }
+            }
+            @media (max-width: 900px) {
+                max-width: 187px;
+            }
+            @media (max-width: 500px) {
+                max-width: 127px;
             }
             img {
                 transition: 0.4s;

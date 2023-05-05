@@ -65,6 +65,9 @@
 .swiper {
     position: relative;
     height: calc(var(--vh, 1vh) * 100);
+    &-wrapper {
+        transition-duration: 900ms !important;
+    }
     &-container {
         position: absolute;
         height: 100%;
