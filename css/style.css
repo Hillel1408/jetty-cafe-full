@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: "Helvetica";
   font-display: swap;
@@ -434,6 +434,7 @@ h6 {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  font-weight: 500;
 }
 .menu__title:before, .menu__title:after {
   -webkit-transition: 0.4s;
@@ -468,6 +469,7 @@ h6 {
   color: black;
   font-size: 18px;
   margin-bottom: 16px;
+  font-weight: 700;
 }
 .menu__grid {
   display: -ms-grid;
