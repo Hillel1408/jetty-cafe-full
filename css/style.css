@@ -210,6 +210,11 @@ h6 {
   position: relative;
   height: calc(var(--vh, 1vh) * 100);
 }
+.swiper-wrapper {
+  -webkit-transition-duration: 900ms !important;
+       -o-transition-duration: 900ms !important;
+          transition-duration: 900ms !important;
+}
 .swiper-container {
   position: absolute;
   height: 100%;
@@ -426,9 +431,24 @@ h6 {
 .services__list-item:nth-child(4) {
   max-width: 210px;
 }
-@media (max-width: 520px) {
+@media (max-width: 1224px) {
   .services__list-item:nth-child(4) {
-    max-width: 177px;
+    max-width: 187px;
+  }
+}
+@media (max-width: 500px) {
+  .services__list-item:nth-child(4) {
+    max-width: 127px;
+  }
+}
+@media (max-width: 900px) {
+  .services__list-item {
+    max-width: 187px;
+  }
+}
+@media (max-width: 500px) {
+  .services__list-item {
+    max-width: 127px;
   }
 }
 .services__list-item img {
