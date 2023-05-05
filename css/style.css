@@ -210,11 +210,6 @@ h6 {
   position: relative;
   height: calc(var(--vh, 1vh) * 100);
 }
-.swiper-wrapper {
-  -webkit-transition-duration: 900ms !important;
-       -o-transition-duration: 900ms !important;
-          transition-duration: 900ms !important;
-}
 .swiper-container {
   position: absolute;
   height: 100%;
