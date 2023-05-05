@@ -2,11 +2,13 @@
     position: absolute;
     z-index: 3;
     top: 70px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    left: 15px;
+    right: 15px;
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     a {
         color: white;
         font-family: 'Open Sans', sans-serif;
@@ -23,11 +25,35 @@
         &:last-child {
             text-align: right;
         }
+        @media (max-width: 900px) {
+            font-size: 22px;
+        }
+        @media (max-width: 460px) {
+            font-size: 18px;
+        }
+        @media (max-width: 360px) {
+            font-size: 16px;
+        }
     }
-    @media (max-width: 430px) {
-        top: 52px;
-        img {
+    &-img {
+        @media (max-width: 900px) {
+            width: 160px;
+        }
+        @media (max-width: 700px) {
+            display: none;
+        }
+        @media (max-width: 430px) {
+            top: 52px;
             width: 130px;
+        }
+    }
+    &-mobile-img {
+        display: none;
+        @media (max-width: 700px) {
+            width: 160px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            display: block;
         }
     }
 }
@@ -46,10 +72,22 @@
             &:after {
                 display: none;
             }
+            @media (max-width: 1150px) {
+                left: 15px;
+            }
+            @media (max-width: 900px) {
+                display: none;
+            }
         }
         & .swiper-button-next {
             right: 114px;
             &:after {
+                display: none;
+            }
+            @media (max-width: 1150px) {
+                right: 15px;
+            }
+            @media (max-width: 900px) {
                 display: none;
             }
         }
@@ -62,14 +100,20 @@
             bottom: 50%;
             transform: translateY(50%);
             text-align: center;
-            left: 0;
-            right: 0;
+            left: 15px;
+            right: 15px;
+            @media (max-width: 700px) {
+                bottom: 40%;
+            }
             p {
                 font-size: 30px;
                 color: white;
                 font-family: 'Open Sans', sans-serif;
                 max-width: 730px;
                 margin: 0 auto;
+                @media (max-width: 900px) {
+                    font-size: 24px;
+                }
             }
         }
         &:before {
