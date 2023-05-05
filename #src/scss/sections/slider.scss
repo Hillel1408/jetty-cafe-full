@@ -17,7 +17,7 @@
         flex-direction: column;
         font-weight: 600;
         gap: 16px;
-        text-shadow: white 1px 0 10px;
+        transition: 0.4s;
         span {
             text-transform: uppercase;
             text-decoration: underline;
@@ -33,6 +33,9 @@
         }
         @media (max-width: 360px) {
             font-size: 16px;
+        }
+        &:hover {
+            text-shadow: white 1px 0 10px;
         }
     }
     @media (max-width: 700px) {
@@ -80,6 +83,17 @@
             @media (max-width: 900px) {
                 display: none;
             }
+            &__img-hover {
+                display: none;
+            }
+            &:hover {
+                .swiper-button-prev__img {
+                    display: none;
+                }
+                .swiper-button-prev__img-hover {
+                    display: block;
+                }
+            }
         }
         & .swiper-button-next {
             right: 114px;
@@ -91,6 +105,17 @@
             }
             @media (max-width: 900px) {
                 display: none;
+            }
+            &__img-hover {
+                display: none;
+            }
+            &:hover {
+                .swiper-button-next__img {
+                    display: none;
+                }
+                .swiper-button-next__img-hover {
+                    display: block;
+                }
             }
         }
     }

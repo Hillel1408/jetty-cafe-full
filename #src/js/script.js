@@ -9,6 +9,9 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     loop: true,
+    autoplay: {
+        delay: 2000,
+    },
 });
 
 new fullpage('#fullpage', {

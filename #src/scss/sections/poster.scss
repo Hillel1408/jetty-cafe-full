@@ -12,6 +12,11 @@
         img {
             width: 100%;
         }
+        & > img {
+            @media (max-width: 600px) {
+                order: -1;
+            }
+        }
         a {
             position: relative;
             span {
@@ -24,9 +29,11 @@
                 top: 0;
                 left: 0;
             }
-            &:hover {
-                span {
-                    background: rgba(0, 0, 0, 0.35);
+            @media (any-hover: hover) {
+                &:hover {
+                    span {
+                        background: rgba(0, 0, 0, 0.35);
+                    }
                 }
             }
         }

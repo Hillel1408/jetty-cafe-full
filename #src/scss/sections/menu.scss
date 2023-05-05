@@ -68,6 +68,11 @@
             @media (max-width: 768px) {
                 margin-bottom: 0;
             }
+            &:last-child {
+                @media (max-width: 768px) {
+                    margin-top: 0;
+                }
+            }
         }
         &-item {
             display: flex;
