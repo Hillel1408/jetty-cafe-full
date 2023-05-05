@@ -521,6 +521,11 @@ h6 {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+@media (max-width: 768px) {
+  .menu__grid-item {
+    gap: 30px;
+  }
+}
 .menu__flex {
   display: -webkit-box;
   display: -ms-flexbox;
