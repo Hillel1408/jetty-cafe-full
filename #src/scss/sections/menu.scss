@@ -12,6 +12,7 @@
         width: fit-content;
         margin: 0 auto;
         transition: 0.4s;
+        font-weight: 500;
         &:before,
         &:after {
             transition: 0.4s;
@@ -46,6 +47,7 @@
         color: black;
         font-size: 18px;
         margin-bottom: 16px;
+        font-weight: 700;
     }
     &__grid {
         display: grid;
