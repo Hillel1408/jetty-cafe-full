@@ -5,6 +5,11 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        flex-wrap: wrap;
+        @media (max-width: 1233px) {
+            justify-content: space-around;
+            row-gap: 30px;
+        }
         &-item {
             font-size: 16px;
             font-family: 'Open Sans', sans-serif;
@@ -19,6 +24,7 @@
             max-width: 177px;
             cursor: pointer;
             position: relative;
+            transition: 0.4s;
             span {
                 margin-top: auto;
             }
@@ -26,7 +32,7 @@
                 max-width: 210px;
             }
             img {
-                transition: 0.5s;
+                transition: 0.4s;
                 &.img-hover {
                     position: absolute;
                     top: 0;
@@ -35,6 +41,7 @@
                 }
             }
             &:hover {
+                color: #d7396e;
                 img.img-hover {
                     opacity: 1;
                     visibility: visible;

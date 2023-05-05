@@ -6,6 +6,9 @@
         max-height: 0;
         overflow: hidden;
         transition: 0.9s;
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
         img {
             width: 100%;
         }
