@@ -28,6 +28,9 @@
                 color: #7841c0;
             }
         }
+        @media (max-width: 768px) {
+            gap: 25px;
+        }
     }
     &__logo {
         display: block;
