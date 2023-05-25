@@ -139,19 +139,30 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-weight: 600;
-  gap: 16px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  gap: 10px;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 .logo a span {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   text-transform: uppercase;
-  text-decoration: underline;
+  border-bottom: 2px solid transparent;
+}
+.logo a img:first-child {
+  width: 30px;
+}
+.logo a img.hover-img {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .logo a:last-child {
   text-align: right;
@@ -173,6 +184,13 @@ h6 {
 }
 .logo a:hover {
   text-shadow: white 1px 0 10px;
+}
+.logo a:hover span {
+  border-bottom: 2px solid white;
+}
+.logo a:hover img.hover-img {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 700px) {
   .logo {
@@ -361,6 +379,17 @@ h6 {
   }
 }
 
+.hover-img {
+  width: 45px;
+  position: absolute;
+  left: -8px;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  visibility: hidden;
+  opacity: 0;
+}
+
 .services {
   padding-top: 85px;
   margin-bottom: 97px;
@@ -499,6 +528,9 @@ h6 {
       -ms-transform: translateY(-3px);
           transform: translateY(-3px);
 }
+.menu__title.poster-btn:before, .menu__title.poster-btn:after {
+  display: none;
+}
 .menu__title.active:before, .menu__title.active:after {
   content: url("../img/icon-19.png");
   -webkit-transform: translateY(4px) rotate(180deg);
@@ -605,7 +637,6 @@ h6 {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 51px;
-  max-height: 0;
   overflow: hidden;
   -webkit-transition: 0.9s;
   -o-transition: 0.9s;
