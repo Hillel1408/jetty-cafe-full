@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
         delay: 3000,
     },
-    speed: 900,
+    speed: 1900,
 });
 
 new fullpage('#fullpage', {
@@ -42,7 +42,7 @@ const menuBtn = document.querySelector('.menu-btn');
 
 func(menuBtn, menu);
 
-const poster = document.querySelector('.poster__grid');
+/*const poster = document.querySelector('.poster__grid');
 const posterBtn = document.querySelector('.poster-btn');
 
-func(posterBtn, poster);
+func(posterBtn, poster);*/

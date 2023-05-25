@@ -19,6 +19,12 @@
             content: url('../img/icon-19.png');
             transform: translateY(-3px);
         }
+        &.poster-btn {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
         &.active {
             &:before,
             &:after {
