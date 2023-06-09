@@ -25,10 +25,12 @@
             border-bottom: 2px solid transparent;
         }
         img:first-child {
-            width: 30px;
+            width: 13px;
         }
         img.hover-img {
             transition: 0.2s;
+            width: 25px;
+            transform: translateY(1px) translateX(2px);
         }
         &:last-child {
             text-align: right;

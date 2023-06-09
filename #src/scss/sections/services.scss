@@ -16,6 +16,7 @@
         }
         &-item {
             font-size: 16px;
+            line-height: 140%;
             font-family: 'Open Sans', sans-serif;
             text-transform: uppercase;
             color: black;
@@ -24,7 +25,7 @@
             align-items: center;
             text-align: center;
             grid-area: 26px;
-            gap: 26px;
+            gap: 15px;
             max-width: 177px;
             cursor: pointer;
             position: relative;
