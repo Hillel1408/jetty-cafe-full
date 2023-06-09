@@ -157,12 +157,16 @@ h6 {
   border-bottom: 2px solid transparent;
 }
 .logo a img:first-child {
-  width: 30px;
+  width: 13px;
 }
 .logo a img.hover-img {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width: 25px;
+  -webkit-transform: translateY(1px) translateX(2px);
+      -ms-transform: translateY(1px) translateX(2px);
+          transform: translateY(1px) translateX(2px);
 }
 .logo a:last-child {
   text-align: right;
@@ -420,6 +424,7 @@ h6 {
 }
 .services__list-item {
   font-size: 16px;
+  line-height: 140%;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: black;
@@ -436,7 +441,7 @@ h6 {
   text-align: center;
   -ms-grid-row: 26;
   grid-area: 26px;
-  gap: 26px;
+  gap: 15px;
   max-width: 177px;
   cursor: pointer;
   position: relative;
@@ -712,13 +717,28 @@ h6 {
           flex-direction: column;
   gap: 9px;
 }
+.footer__list:first-child {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__list-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr;
+  grid-template-columns: 20px 1fr;
+  gap: 9px;
+}
+.footer__list-item img {
+  margin: 0 auto;
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
 .footer__list-item, .footer__list-item a {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -726,7 +746,6 @@ h6 {
   -o-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
-  gap: 9px;
 }
 .footer__list-item:hover, .footer__list-item a:hover {
   color: #7841c0;
@@ -739,4 +758,5 @@ h6 {
 .footer__logo {
   display: block;
   margin: 0 auto;
+  width: 150px;
 }
