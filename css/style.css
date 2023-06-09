@@ -600,12 +600,13 @@ h6 {
   }
 }
 .menu__grid-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 20px;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 .menu__grid-item span {
   -webkit-box-flex: 0;
