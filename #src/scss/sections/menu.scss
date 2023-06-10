@@ -81,10 +81,11 @@
             }
         }
         &-item {
-            display: flex;
-            gap: 50px;
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            gap: 20px;
             font-family: 'Open Sans', sans-serif;
-            font-size: 16px;
+            font-size: 15px;
             span {
                 flex: 0 0 auto;
             }
