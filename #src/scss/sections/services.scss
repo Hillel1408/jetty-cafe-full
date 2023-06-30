@@ -37,10 +37,11 @@
             cursor: pointer;
             position: relative;
             transition: 0.4s;
-
-            &:nth-child(4) {
+            &:nth-child(2) {
                 img {
-                    width: 40px;
+                    @media (max-width: 390px) {
+                        width: 30px;
+                    }
                 }
             }
             &:nth-child(6) {
@@ -55,10 +56,13 @@
                 margin: 0 auto;
             }
             @media (max-width: 430px) {
-                font-size: 10px;
+                font-size: 12px;
                 img {
                     width: 40px;
                 }
+            }
+            @media (max-width: 390px) {
+                font-size: 10px;
             }
             span {
                 margin-top: auto;
@@ -85,6 +89,9 @@
                     top: 0;
                     opacity: 0;
                     visibility: hidden;
+                }
+                @media (max-width: 390px) {
+                    width: 36px;
                 }
             }
             &:hover {
