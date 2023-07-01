@@ -529,6 +529,10 @@ h6 {
     width: 30px;
   }
 }
+.services__list-item:nth-child(4) span {
+  display: block;
+  min-width: 210px;
+}
 .services__list-item:nth-child(6) img {
   width: 40px;
 }
