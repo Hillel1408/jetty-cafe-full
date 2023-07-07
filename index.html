@@ -47,20 +47,20 @@
             <div class="logo">
                 <img class="logo-mobile-img" src="img/logo.svg" alt="" />
                 <div>
-                    <a href="tel:+7(985)415-25-50"
-                        ><img src="img/icon-32.svg" alt="" /><img
-                            class="hover-img"
-                            src="img/icon-25.png"
-                            alt=""
-                        /><span>Хочу банкет</span></a
-                    >
-                    <img class="logo-img" src="img/logo.svg" alt="" />
                     <a href="tel:+7(958)530-63-63"
                         ><img src="img/icon-32.svg" alt="" /><img
                             class="hover-img"
                             src="img/icon-25.png"
                             alt=""
                         /><span>Хочу в кафе</span></a
+                    >
+                    <img class="logo-img" src="img/logo.svg" alt="" />
+                    <a href="tel:+7(985)415-25-50"
+                        ><img src="img/icon-32.svg" alt="" /><img
+                            class="hover-img"
+                            src="img/icon-25.png"
+                            alt=""
+                        /><span>Хочу банкет</span></a
                     >
                 </div>
             </div>
@@ -205,7 +205,7 @@
         </li>
         <li class="services__list-item">
             <img src="img/icon-30.svg" alt="" /><span
-                >15 ГОСТИНИЧНЫХ НОМЕРОВ</span
+                >10 ГОСТИНИЧНЫХ НОМЕРОВ</span
             >
         </li>
         <li class="services__list-item">
@@ -702,8 +702,24 @@
 </section>
 
                 <section class="poster">
-    <h2 class="menu__title poster-btn">Афиша</h2>
-    <div class="poster__grid">
+    <h2 class="menu__title">Афиша</h2>
+    <div class="swiper-3">
+        <div class="swiper-wrapper poster-swiper-wrapper">
+            <div class="swiper-slide poster-slide">
+                <img src="img/afisha1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide poster-slide">
+                <img src="img/afisha2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide poster-slide">
+                <img src="img/afisha3.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="gallery">
+    <h2 class="menu__title gallery-btn">Галерея</h2>
+    <div class="gallery__grid">
         <a href="img/6.jpg" data-fancybox="gallery"
             ><img src="img/6.jpg" alt="" /><span></span
         ></a>
@@ -716,7 +732,9 @@
         <a href="img/9.jpg" data-fancybox="gallery"
             ><img src="img/9.jpg" alt="" /><span></span
         ></a>
-        <img src="img/10.jpg" alt="" />
+        <a href="img/6.jpg" data-fancybox="gallery"
+            ><img src="img/6.jpg" alt="" /><span></span
+        ></a>
         <a href="img/11.jpg" data-fancybox="gallery"
             ><img src="img/11.jpg" alt="" /><span></span
         ></a>
@@ -731,17 +749,9 @@
         ></a>
     </div>
 </section>
- <section>
-    <script
-        type="text/javascript"
-        charset="utf-8"
-        async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad271fa723184ea50339539253cc865129fbce13c9d15477d0d3611b5fdea8e93&amp;width=100%25&amp;height=420&amp;lang=ru_RU"
-    ></script>
-</section>
 
-                <footer class="footer container">
-    <div class="footer__grid">
+                <footer class="footer">
+    <div class="footer__grid container">
         <ul class="footer__list">
             <li class="footer__list-item">
                 <img src="img/icon-16.svg" alt="" />25 МИНУТ ОТ САВЕЛОВСКОГО
@@ -775,6 +785,13 @@
             </li>
         </ul>
     </div>
+    <section class="map">
+    <img src="../img/map.jpg" alt="" />
+    <a href="https://yandex.ru/profile/71520435251"
+        ><img src="img/icon-33.svg" alt="" />Смотреть на Яндекс.Карте</a
+    >
+</section>
+
     <img class="footer__logo" src="img/logo.svg" alt="" />
 </footer>
 

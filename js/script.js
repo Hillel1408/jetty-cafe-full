@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 3000,
+        delay: 9000,
     },
     loop: true,
     speed: 1900,
@@ -26,10 +26,14 @@ const swiper2 = new Swiper('.swiper-2', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 3000,
+        delay: 9000,
     },
     effect: 'fade',
     speed: 1900,
+});
+const swiper3 = new Swiper('.swiper-3', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
 });
 
 new fullpage('#fullpage', {
