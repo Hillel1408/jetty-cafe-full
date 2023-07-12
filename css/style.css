@@ -660,6 +660,7 @@ h6 {
   color: black;
   margin-top: 85px;
   margin-bottom: 85px;
+  text-align: center;
 }
 @media (max-width: 820px) {
   .services__text {
