@@ -1015,6 +1015,31 @@ h6 {
     width: 100% !important;
   }
 }
+
+.swiper-3 {
+  position: relative;
+}
+
+.swiper-3-button-next,
+.swiper-3-button-prev {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.swiper-3-button-next svg,
+.swiper-3-button-prev svg {
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-3-button-next {
+  right: 0;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;

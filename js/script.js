@@ -34,6 +34,10 @@ const swiper2 = new Swiper('.swiper-2', {
 const swiper3 = new Swiper('.swiper-3', {
     direction: 'horizontal',
     slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.swiper-3-button-next',
+        prevEl: '.swiper-3-button-prev',
+    },
 });
 
 new fullpage('#fullpage', {
