@@ -1,20 +1,5 @@
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 9000,
-    },
-    loop: true,
-    speed: 1900,
-});
 const swiper2 = new Swiper('.swiper-2', {
+    allowTouchMove: false,
     direction: 'horizontal',
     loop: true,
     pagination: {
@@ -29,7 +14,36 @@ const swiper2 = new Swiper('.swiper-2', {
         delay: 9000,
     },
     effect: 'fade',
-    speed: 1900,
+    speed: 900,
+    breakpoints: {
+        410: {
+            speed: 1900,
+        },
+    },
+});
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 9000,
+    },
+    loop: true,
+    speed: 900,
+    thumbs: {
+        swiper: swiper2,
+    },
+    breakpoints: {
+        410: {
+            speed: 1900,
+        },
+    },
 });
 const swiper3 = new Swiper('.swiper-3', {
     direction: 'horizontal',
