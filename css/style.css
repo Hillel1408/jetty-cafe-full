@@ -306,6 +306,11 @@ h6 {
   position: absolute;
   z-index: 2;
 }
+@media (max-width: 430px) {
+  .swiper:before {
+    z-index: 0;
+  }
+}
 .swiper-container {
   position: absolute;
   height: 100%;
